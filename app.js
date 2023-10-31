@@ -2,14 +2,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const app = express();
-const port = 3000; // Change this to your desired port
+
+const port = process.env.PORT || 3000;
 
 const dotenv = require('dotenv');
 dotenv.config();
 
 app.use(bodyParser.json());
 
-// Create a route to receive error data via a webhook
 app.post('/error', (req, res) => {
   const errorData = req.body;
 
