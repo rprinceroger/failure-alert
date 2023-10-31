@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "52cfcf65-f744-4ab1-ab0e-f0551669ad9d",
+		"name": "Viribuz Test Alert",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28880273"
+	},
+	"item": [
+		{
+			"name": "error",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"This is a test error message.\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/error",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"error"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
