@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"message\": \"This is a test error message.\" \r\n}",
+					"raw": "{\r\n    \"message\": \"This is a test error message after deployment on Render.\" \r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,12 +21,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/error",
-					"protocol": "http",
+					"raw": "https://mail-alert.onrender.com/error",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"mail-alert",
+						"onrender",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"error"
 					]
